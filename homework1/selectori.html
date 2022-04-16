@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr:first-child td:first-child{background-color: brown;}
+        tr:first-child td:nth-child(2){background-color: cadetblue;}
+        tr:nth-child(2) td:first-child{background-color: chartreuse;}
+        tr:nth-child(2) td:nth-child(2){background-color: coral;}
+        tr:nth-child(3) td{background-color: crimson;}
+        div>ul>li:first-child{background-color: red;}
+        div>ul>li:nth-child(2){background-color: green;}
+        div>ul>li:nth-child(3){background-color: blue;}
+        div>ul>li:nth-child(4){background-color: yellow;}
+        div>p em{background-color: violet;}
+        p>strong>a{background-color: aqua;}
+        p>i>a{background-color: gray;}
+        ul>li:first-child{background-color: indigo;}
+        ul>li:nth-child(2){background-color: orange;}
+        ul>li:nth-child(3){background-color: chocolate;}
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <td>brown</td>
+                    <td>cadetblue</td>
+                </tr>
+                <tr>
+                    <td>chartreuse</td>
+                    <td>coral</td>
+                </tr><tr>
+                    <td colspan="2">crimson</td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li><p><a>red</a></p></li>
+            <li><span><em><a>green</a></em></span></li>
+            <li><p><a>blue</a></p></li>
+            <li><a>yellow</a></li>
+        </ul>
+        <p><span><em>violet</em></span></p>
+    </div>
+    <p>
+        <strong><a>aqua</a></strong>
+        <i><a>gray</a></i>
+    </p>
+    <ul>
+        <li><span><em><a>indigo</a></em></span></li>
+        <li><em><a>orange</a></em></li>
+        <li><strong>chocolate</strong></li>
+    </ul>
+</body>
+</html>
