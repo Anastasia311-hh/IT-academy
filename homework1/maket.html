@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        header{width: 100%; height: 72px; background:rgba(196, 196, 196, 0.2); margin: 0px;}
+        header>div:first-child{width: 1296px; margin-left: auto; margin-right: auto; height: 72px;}
+        .imgwolf{width: 53px; height: 60px; padding-left: 68px; padding-top: 7px; mix-blend-mode: multiply;}
+        .wolfhouse{position: absolute;
+            width: 104px;
+            height: 25px;
+            padding-left: 130px;
+            top: 35px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            margin: 0px;}
+        .search{position: absolute;
+            width: 540px;
+            height: 40px;
+            margin-left: 308px;
+            top: 21px;
+            background: #FFFFFF;
+            border-radius: 31px;}
+        input{position: absolute;
+            width: 240px;
+            height: 22px;
+            left: 16.67%;
+            top: 16.67%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #000000; 
+            border: none;
+            margin-left: -41px;}
+        header ul:first-child{display: flex; flex-direction: row; align-items: flex-start;
+            padding: 0px; position: absolute; width: 220px;
+            height: 19px; margin-left: 915px; top: 32px; margin-top: 0px;}
+        header li:first-child{position: static; width: 17px; height: 19px;
+            left: 0px; top: 0px; font-family: 'Open Sans'; font-style: normal;
+            font-weight: 400; font-size: 14px; line-height: 19px;
+            display: flex; align-items: center; text-align: center;
+            color: #000000; flex: none; order: 0; flex-grow: 0; margin: 0px;}
+        header li:nth-child(3){position: static; width: 76px; height: 19px;
+            left: 0px; top: 0px; font-family: 'Open Sans'; font-style: normal;
+            font-weight: 400; font-size: 14px; line-height: 19px; display: flex;
+            align-items: center; text-align: right; color: #000000;
+            flex: none; order: 0; flex-grow: 0; margin: 0px; padding-left: 17px;}
+        header li:nth-child(5){position: static; width: 29px; height: 19px;
+            left: 0px; top: 0px; font-family: 'Open Sans'; font-style: normal;
+            font-weight: 400; font-size: 14px; line-height: 19px; display: flex;
+            align-items: center; text-align: right; color: #000000;
+            flex: none; order: 0; flex-grow: 0;margin: 0px; padding-left: 20.99px;}
+        header li:nth-child(7){width: 40px; height: 31.98px; padding-left: 34.99px;position:relative; margin-top: -10px;}
+        li{list-style-type: none;}
+        body>div:first-of-type{width: 1296px; margin-left: auto; margin-right: auto; height: 80px;}
+        .categories{position: absolute; width: 145px; height: 40px; margin-left: 75px; top: 100px; background: #0772BF; border-radius: 4px;}
+        #navMenu>span{display: block; width: 14px; height: 1.5px; border-radius: 9999px; background-color: white; }
+        #navMenu>span:not(:last-child){margin-bottom: 2.5px;}
+        #navMenu{margin-top: 15.5px; margin-left: 17px; position: absolute;}
+        #categories{margin-left: 40px; margin-top: 9px; margin-bottom: 9px; width: 87px; height: 22px;font-weight: 600; position:absolute; font-size: 16px; line-height: 22px; letter-spacing: 0.03em; color: white;}
+        #Ski>ul>li{font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.01em;
+            margin-left:  32px ;}
+        .baner{background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/baner1.jpg) center no-repeat; width: 1296px; height: 464px; margin: auto;}
+        body>div>div>p:first-of-type{
+            width: 660px;
+            height: 44px;
+            left: 153px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;}
+        body>div>div>p:nth-child(2){
+            width: 656px;
+            height: 22px;
+            left: 153px;
+            top: 56px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;}
+        body>div>div>p{font-family: 'Open Sans';
+            font-style: normal;position: absolute; 
+            letter-spacing: 0.01em;
+            color: #FFFFFF;}
+        .btn{position: absolute; width: 144px; height: 40px; border-radius: 36px; cursor: pointer; border: 1px solid #FFFFFF; background: none; color: white;
+            box-sizing: border-box; text-transform: uppercase; letter-spacing: 0.03em; font-weight: 600; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease; left: 151px; top: 127px;}
+        .btn:hover{background: #0772BF; transform: translateY(-7px); color: #fff; box-shadow: 0px 10px 25px rgba(31, 69, 153, 0.445);}
+        .snowb{position: absolute;
+            width: 205px;
+            height: 44px;
+            padding-left: 80px;
+            top: 677px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;}
+        .cat{position: static;
+            width: 91px;
+            height: 22px;
+            left: 0px;
+            top: 0px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 0px 0px 2px;}
+        .vm{position: absolute;
+            width: 104px;
+            height: 22px;}
+        div#aleft a{font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;}
+        .all{position: absolute;
+            width: 237px;
+            height: 22px;
+            left: 3px;
+            top: 54px;
+            color: #BFBEBE;}
+        .gender{position: absolute;
+            width: 195px;
+            height: 22px;
+            left: 2px;}
+        #aleft{float: left; background-color: aqua; width: 267px; height: 1383px;}
+        div#aleft>div:nth-child(5){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 183px;}
+        div#aleft>button{left: 3.5px; width: 15px; height: 15px; position: absolute; background-image: url(/homework1/img/Rectangle.png); }
+        .men{font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: #6C6C6C;}
+        div#aleft>div:nth-child(12){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 359px;}
+        div#aleft>div:nth-child(19){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 535px;}
+        div#aleft>div:nth-child(26){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 712px;}
+        div#aleft>div:nth-child(33){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 887px;}
+        div#aleft>div:nth-child(40){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 1062.5px;}
+        div#aleft>div:nth-child(47){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 1239px;}
+        div#aleft>div:nth-child(50){width: 267px; height: 1px; background-color: #BFBEBE; position: absolute; top: 1303px;}
+        .firstin{width: 222.97px; height: 32px; float: right; border: 1px solid #BFBEBE; box-sizing: border-box; margin-top: 6px;}
+        .secondin{width: 128px; height: 44px; position: absolute; left: 733px; border: 1px solid #BFBEBE; box-sizing: border-box; border-radius: 4px;}
+        #topdiv{width: 849.97px; float: right; height: 44px; background-color: #0772BF;}
+        div#topdiv>a{font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 22px;
+            display: flex; align-items: center; text-align: center; letter-spacing: 0.03em; margin-top: 11px;}
+        #contentdiv{width: 849.97px; float: right; height: 1206px; background-color: #41c0bc; margin-top: 42px; }
+        div#contentdiv div#one{width: 240px; height: 334px; background-color: chartreuse; }
+        div#contentdiv div#two{width: 240px; height: 334px; background-color: chartreuse; margin-top: 40px; }
+        div#contentdiv div#three{width: 240px; height: 334px; background-color: chartreuse; margin-top: 40px; }
+        div#one span{width: 600; font-weight: bold; line-height: 19.07px; font-size: 14px; font-family: 'Open Sans';}
+        div#two span{width: 600; font-weight: bold; line-height: 19.07px; font-size: 14px; font-family: 'Open Sans';}
+        div#three span{width: 600; font-weight: bold; line-height: 19.07px; font-size: 14px; font-family: 'Open Sans';}
+        div#one a{position: absolute; font-weight: 400; font-size: 14px; line-height: 19.07px; width: 240px; height: 38px; font-family: 'Open Sans'; top: 332px;}
+        div#two a{position: absolute; font-weight: 400; font-size: 14px; line-height: 19.07px; width: 240px; height: 38px; font-family: 'Open Sans'; top: 706px;}
+        div#three a{position: absolute; font-weight: 400; font-size: 14px; line-height: 19.07px; width: 240px; height: 38px; font-family: 'Open Sans';}
+        #sellers{width: 1296px; margin-left: auto; margin-right: auto; height: 45px; background-color: blueviolet; margin-top: 1504px;}
+        div#sellers>div:first-child{position: absolute; width: 1296px; height: 44px; top: 2128px;
+            font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-size: 32px; line-height: 44px;
+            align-items: center; text-align: center;letter-spacing: 0.03em;}
+        div#sellers>div:nth-child(2){margin-left: 80px; margin-right: 80px; width: 1136px; height: 272px; position: absolute; top: 2192px;}
+        div#flex>div{width: 272px;height: 272px; border: 1px solid #BFBEBE;}
+        div#flex>div:nth-child(-n+3){ margin-right: 16px;}
+        #flex{display: flex;}
+        div#flex>div>div{width: 159.41px; height: 160px; margin-top: 16px; margin-left: auto; margin-right: auto;}
+        #shlem{background: url(img/shlem.png) no-repeat;}
+        #boti{background: url(img/boti.png) no-repeat}
+        #boti1{background: url(img/boti1.png) no-repeat}
+        #boardsale{background: url(img/boardsale.png) no-repeat}
+        div#flex a{font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px;
+            line-height: 22px; display: flex; align-items: center; letter-spacing: 0.01em; position: absolute; top: 175px;}
+        #cena{font-family: 'Open Sans'; font-style:normal; font-weight: 700; font-size: 16px;
+            line-height: 22px; display: flex; align-items: center; letter-spacing: 0.01em; width: 70.06px; height: 22px; position: absolute; 
+            bottom: 10px; margin-left: -35px;}
+        #flexone{display: flex; width: 1296px; margin: auto; margin-top: 354px;}
+        div#flexone strong{margin-top: 31px; margin-left: 276px; position: absolute; font-size: 16px; line-height: 22px; font-family: 'Open Sans';}
+        #text{margin-top: 66px; position: absolute; font-size: 16px; line-height: 22px; font-family: 'Open Sans'; align-items: center;}
+        #chat{position: absolute; width: 136px; height: 36px; background: #1977DA; border-radius: 5px; top: 2627px; margin-left: 260px;}
+        button#chat>div{font-family: 'Open Sans'; font-style: normal; font-size: 16px; font-weight: 700; line-height: 22px; color: white;}
+        #call{font-family: 'Open Sans'; font-size: normal; font-weight: 700; font-size: 16px; line-height: 22px; position: absolute; top: 2676px; margin-left: 228px;}
+        #footter{width: 1296px; height: 40px; margin-left: auto; margin-right: auto; margin-top: 15px; background-color: #0772BF;}
+        div#footter>ul{display: flex; flex-direction: row; align-items: flex-start; padding: 0px; position: absolute;
+            width: 954px; height: 22px; margin-left: 163px; margin-top: 10px;}
+        div#footter li:nth-child(-n+6){margin-right: 65px;font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px;
+            line-height: 22px; display: flex; align-items: center; letter-spacing: 0.03em; color: white;}
+        div#footter li:nth-child(7){color: white;}
+   </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/volf.png" class="imgwolf">
+            <p class="wolfhouse">Wolf House</p>
+            <form name="search" action="#" method="get" class="search"><img src="img/lypa.png" style="src: url(img/lypa.png); width: 13px; height: 13px; padding-left: 19.33px;
+                padding-top: 13.33px;"><input type="text" name="q" placeholder="Search brands, gear and guides" style="opacity: 0.2;"></form>
+            <div><ul>
+                <li>En</li>
+                <li><img src="img/Screenshot_1.png" style="width: 16px; height: 16px; padding-left: 8px;"></li>
+                <li>My account</li>
+                <li><img src="img/Vector.png" style="width: 8px; height: 4.94px; padding-left: 8.01px;"></li>
+                <li>USD</li>
+                <li><img src="img/Vector.png" style="width: 8px; height: 4.94px; padding-left: 8.01px;" ></li>
+                <li><img src="img/корзина.png" ></li>
+            </ul></div>
+        </div>
+    </header>
+    <div>
+        <div class="categories" style="float: left;">
+            <div id="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="categories">Categories</div>
+        </div>
+        <div id="Ski" style="width: 1296px; height: 22px; position:absolute; margin: auto;">
+            <ul style="display: flex; margin-left: 220px; margin-top: 30px; padding: 0px;">
+                <li>Ski boots</li>
+                <li>Ski accessories</li>
+                <li>Apparel</li>
+                <li>Snowboard shop</li>
+                <li>Brands</li>
+                <li style="color: red;">Sale</li>
+            </ul>
+        </div>
+    </div>
+    <div class="baner">
+        <div style="width: 1296px; margin: auto; height: 170px; position: absolute; top:288px; ">
+            <p class="first">New ATOMIC collection with nano-techs.</p>
+            <p class="second">Check our new 2021 collection for freeride.</p>
+            <button class="btn">Button</button>
+        </div>
+    </div>
+    <div style="width: 1269px; margin: auto;"><a class="snowb">Snowboards</a></div>
+    <div>
+        <div style="position: absolute; left: 77px; right: 80.03px; top: 724px; width: 1138.97px; margin: auto;">
+            <div id="aleft">
+                <a class="cat">Cattegories</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 8px; left: 248.49px;"></div>
+                <a class="all">All-Mauntain Snowboards (51)</a>
+                <a class="vm" style="top: 150px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 198px">Gender</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 208.2px; left: 248.49px;"></div>
+                <button style="position: absolute; top:231.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 263.5px;"></button>
+                <button style="position: absolute; top: 295.5px;"></button>
+                <a class="vm" style="top: 326px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 374px;">Brans</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 382.02px; left: 248.49px;"></div>
+                <button style="position: absolute; top:407.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 439.5px;"></button>
+                <button style="position: absolute; top: 471.5px;"></button>
+                <a class="vm" style="top: 502px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 550px;">Snowboards Lenght (cm)</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 559.02px; left: 248.49px;"></div>
+                <button style="position: absolute; top:583.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 615.5px;"></button>
+                <button style="position: absolute; top: 647.5px;"></button>
+                <a class="vm" style="top: 678px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 726px;">Snowboards Shape</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 735.02px; left: 248.49px;"></div>
+                <button style="position: absolute; top:759.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 791.5px;"></button>
+                <button style="position: absolute; top: 823.5px;"></button>
+                <a class="vm" style="top: 678px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 902px;">Snowboards Style</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 909.02px; left: 248.49px;"></div>
+                <button style="position: absolute; top:935.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 967.5px;"></button>
+                <button style="position: absolute; top: 999.5px;"></button>
+                <a class="vm" style="top: 1030px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 1078px;">Price</a>
+                <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 1087.02px; left: 248.49px;"></div>
+                <button style="position: absolute; top:1111.5px;"><div style="left: 28px;" class="men">men</div></button>
+                <button style="position: absolute; top: 1143.5px;"></button>
+                <button style="position: absolute; top: 1175.5px;"></button>
+                <a class="vm" style="top: 1206px;">View more...</a>
+                <div></div>
+                <a class="gender" style="top: 1255px;">Snowbord Profile</a>
+                <div><img src="img/Vector.png" style=" float: right; position: absolute; top: 1262.02px; left: 248.49px;"></div>
+                <div></div>
+                <a class="gender" style="top: 1318px;">Flex</a>
+                <div><img src="img/Vector.png" style="float: right; position: absolute; top: 1326.02px; left: 248.49px;"></div>
+            </div>
+            <div id="topdiv">
+                <div class="firstin"></div>
+                <div class="secondin"></div>
+                <a>170 Matches found</a>
+            </div>
+            <div id="contentdiv">
+                <div style="display: flex;">
+                    <div style="margin-left: 49px; margin-right: 25px; background: url(img/blackboard.png) top center no-repeat " id="one">
+                        <a><span>Niche:</span>Nightshade Snowboard - Women's - 2019/2020</a>
+                    </div>
+                    <div style="margin-right:25px; background: url(img/secboard.png) top center no-repeat" id="one">
+                       <a><span>Weston:</span> Backwoods Snowboard - 2020/2021 sdkfjsdkf jksdlkfs kdfk..</a>
+                    </div>
+                    <div style="margin-right: 30.97px; background: url(img/orangeboard.png) top center no-repeat" id="one">
+                        <a><span>Niche:</span>Nightshade Snowboard - Women's - 2019/2020</a>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin-left: 49px; margin-right: 25px; background: url(img/blackboard.png) top center no-repeat" id="two">
+                        <a><span>Niche:</span>Nightshade Snowboard - Women's - 2019/2020</a>
+                    </div>
+                    <div style="margin-right:25px; background: url(img/secboard.png) top center no-repeat" id="two">
+                        <a><span>Weston:</span> Backwoods Snowboard - 2020/2021 sdkfjsdkf jksdlkfs kdfk..</a>
+                    </div>
+                    <div style="margin-right: 30.97px; background: url(img/orangeboard.png) top center no-repeat"id="two">
+                        <a><span>Niche:</span>Nightshade Snowboard - Women's - 2019/2020</a>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin-left: 49px; margin-right: 25px;background: url(img/blueboard.png) top center no-repeat" id="three">
+                        <div style="position: absolute; top: 1075px;"><span>Jones</span><br><a>Twin Sister Snowboard - Women's - 2020/2021</a></div>
+                    </div>
+                    <div style="margin-right:25px; background: url(img/whiteboard.png) top center no-repeat;" id="three">
+                        <div style="position: absolute; top: 1075px;"><span>Burton</span><br><a>Deep Thinker Snowboard - 2020/2021</a></div>
+                    </div>
+                    <div style="margin-right: 30.97px;" id="three"></div>
+                </div>
+            </div>
+            <div style="border: 0.5px solid #BFBEBE; width: 1139px; clear: both;"></div>
+        </div>
+    </div>
+    <div id="sellers">
+        <div>Best Sellers</div>
+        <div id="flex">
+            <div>
+                <div id="shlem">
+                    <a>POC Obex Spin Helmet</a>
+                    <div id="cena">$ 279.95</div>
+                </div>
+            </div>
+            <div>
+                <div id="boti">
+                    <a>Rossignol<br>EVO 70 Ski Boots</a>
+                    <div id="cena">$ 89.99</div>
+                </div>
+            </div>
+            <div >
+                <div id="boti1">
+                    <a>Tecnica<br>JT 2 Pearl Girl Ski Boots  </a>
+                    <div id="cena">$ 119.95</div>
+                </div>
+            </div>
+            <div>
+                <div id="boardsale">
+                    <a>Rossignol<br>XV Sashimi LG Light</a>
+                    <div id="cena">$ 599.95</div>
+                </div>
+            </div>
+        </div>
+        <div style="border: 0.5px solid #BFBEBE; width: 1139px; position: absolute; top: 2526px; margin-left: 80px; margin-right: 80px;"></div>
+    </div>
+    <div id="flexone">
+        <div style="width: 648px; height: 203px; background-color: coral;">
+            <strong>Need Help?</strong>
+            <div id="text" style="margin-left: 144px;">Talk to our Gearheads 24/7 about your needs</div>
+            <button id="chat">
+                <div>Chat Now</div>
+            </button>
+            <div id="call">Or Call: 1-800-409-4502</div>
+        </div>
+        <div style="width: 648px; height: 203px; background-color: rgb(134, 81, 101);">
+            <strong>Stay in the know</strong>
+            <div id="text" style="margin-left: 186px;">Be the first to see sales & new gear!</div>
+            <form>
+                Email Address<br>
+                <input type="text" name="Email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div id="footter">
+        <ul>
+            <li>Cattegories</li>
+            <li>Ski boots</li>
+            <li>Ski accessories</li>
+            <li>Apparel</li>
+            <li>Snowboard shop</li>
+            <li>Brands</li>
+            <li>Sale</li>
+        </ul>
+    </div>
+</body>
+</html>
