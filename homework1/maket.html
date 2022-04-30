@@ -220,6 +220,15 @@
         div#footter li:nth-child(-n+6){margin-right: 65px;font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px;
             line-height: 22px; display: flex; align-items: center; letter-spacing: 0.03em; color: white;}
         div#footter li:nth-child(7){color: white;}
+
+        @media all and (max-widht:1296px) {
+            header, header>div, div.baner, div#allcontent,div#flexone,div#sallers, div#footter{width: 100%;}
+            body{margin:0px} 
+            .search{max-width: 540px;}
+        }
+        @media all and (max-widht:992px){
+            .search{width: 25%;}
+        }
    </style>
 </head>
 <body>
@@ -268,7 +277,7 @@
         </div>
     </div>
     <div style="width: 1269px; margin: auto;"><a class="snowb">Snowboards</a></div>
-    <div>
+    <div id="allcontent">
         <div style="position: absolute; left: 77px; right: 80.03px; top: 724px; width: 1138.97px; margin: auto;">
             <div id="aleft">
                 <a class="cat">Cattegories</a>
@@ -278,9 +287,7 @@
                 <div></div>
                 <a class="gender" style="top: 198px">Gender</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 208.2px; left: 248.49px;"></div>
-                <button style="position: absolute; top:231.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 263.5px;"></button>
-                <button style="position: absolute; top: 295.5px;"></button>
+                
                 <a class="vm" style="top: 326px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 374px;">Brans</a>
@@ -407,11 +414,7 @@
         <div style="width: 648px; height: 203px; background-color: rgb(134, 81, 101);">
             <strong>Stay in the know</strong>
             <div id="text" style="margin-left: 186px;">Be the first to see sales & new gear!</div>
-            <form>
-                Email Address<br>
-                <input type="text" name="Email">
-                <input type="submit" value="Submit">
-            </form>
+            
         </div>
     </div>
     <div id="footter">

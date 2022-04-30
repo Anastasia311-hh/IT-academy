@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: 300px; border: 8px double darkmagenta">
+        <legend>Maket_form</legend>
+        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+            <label for="n">Фамилия:</label>
+            <input id="n" type="text" name="name"><br>
+            <label for="a">Имя:</label>
+            <input id="a" type="text" name="name"><br> 
+            <label for="o">Отчество:</label>
+            <input id="o" type="text" name="name"><br> 
+            <label for="e">E-mail для связи:</label>
+            <input id="e" type="text" name="name"><br>
+            Согласен с правилами сайта:
+            <input type="checkbox" name="j" checked><br>
+            <input type="submit" value="Регистрация"><br>
+            Вид деятельности:<br>
+            <input type="radio" name="answer" value="1" >Работа<br>
+            <input type="radio" name="answer" value="2">Пенсионер<br>
+            <input type="radio" name="answer" value="3">Самозанятость<br>
+            <input type="radio" name="answer" value="4">Безработный<br>
+            Категория прав:<br>
+            <input type="checkbox" name="onlynew">A<br>
+            <input type="checkbox" name="onlynew" >B<br>
+            <input type="checkbox" name="onlynew" >AB<br>
+            <input type="checkbox" name="onlynew" >D<br>
+            <input type="checkbox" name="onlynew" >E<br>
+           Ваша ЗП:<br>
+            <select name="зп" size="3">
+                <option value="7">100$</option>
+                <option value="5" selected>200$</option>
+                <option value="8">500$</option>
+                <option value="9">1000$</option>
+            </select><br>
+            Отзыв:<br>
+            <textarea name="text"></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </fieldset>
+</body>
+</html>
