@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_FORM</title>
+    <link rel="shortcut icon" href="img/photo_2022-03-05_19-10-31.jpg" type="image/x-icon">
+    <style>
+        #radio{display: flex;}
+        #left{float: left; width: 30%}
+        #sem{float: left; width: 70%}
+        @media all and (max-width:650px) {
+            #radio{display: inline-block;}
+            #left{clear: left; width: 100%;}
+            #sem{clear: left; width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="border: 5px solid red;">
+        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+            <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div><br>
+                <div id="left">
+                    <div><label for="n">Название статьи:</label></div>
+                </div>
+                <div id="sem">
+                    <div><input id="n" type="text" name="name" style="width: 100%;"><br></div>
+                </div>
+                <div id="left">
+                    <div>Рубрика:</div>
+                </div>
+                <div id="sem">
+                    <div>
+                        <select name="руб">
+                            <option value="7">программирование</option>
+                            <option value="5">музыка за 300</option>
+                            <option value="8">биполярный электропривод</option>
+                            <option value="9">трансформатор без земли</option>
+                            <option value="10">управляемый диод</option>
+                        </select><br>
+                    </div>
+                </div>
+                <div id="left">
+                    <div>Публикация:</div>
+                </div>
+                <div id="sem">
+                    <div>
+                        <div id="radio">
+                            <input type="radio" name="answer" value="1">На сайте<br>
+                            <input type="radio" name="answer" value="2">В журнале<br>
+                            <input type="radio" name="answer" value="3">На сайте и в журнале<br></div>
+                    </div>
+                </div>
+                Разрешить комментарии:
+                <input type="checkbox" name="j" checked><br>
+                Текст статьи:<br>
+                <textarea name="text" style="width: 100%;"></textarea><br>
+                <input type="submit" value="Опубликовать">
+        </form>
+    </fieldset>
+</body>
+</html>
