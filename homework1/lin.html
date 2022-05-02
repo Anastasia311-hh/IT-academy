@@ -7,27 +7,68 @@
     <title>Document</title>
     <style>
         a{color: green;}
-        .line{width: 3px; height: 20px; background-color: red; margin:0px 10px 0px 10px}
-    </style>
+        div#first>div{width: 3px; height: 20px; background-color: red; margin:0px 10px 0px 10px}
+        body>div{display: flex;}
+        div#second{display: flex;}
+        div#second div{border:3px  solid red; margin-right: 20px; border-bottom: 0px; border-top: 0px; border-left: 0px;}
+        div#second div a{padding-right: 10px;}
+        div#third a{border: 3px solid red; padding-right: 10px; border-bottom: 0px; border-top: 0px; border-left: 0px}
+        div#third a:nth-child(n+2){padding-left: 10px;}
+        table td:nth-child(2n+1){border: 3px solid red;border-bottom: 0px; border-top: 0px; }
+        table td:nth-child(-5n+1){border-left: 0px;}
+        table a:not(.cl){margin: 0px 20px 0px 20px;}
+        .cl{margin-right: 20px;}
+        </style>
 </head>
 <body>
-    <div style="display: flex;">
+    <div id="first">
         <a href='http://stars.chromeexperiments.com/'>первая ссылка</a>
-        <div class="line"></div>
+        <div></div>
         <a href='http://stars.chromeexperiments.com/' >вторая ссылка</a>
-        <div class="line"></div>
+        <div></div>
         <a href='http://stars.chromeexperiments.com/' >третья ссылка</a>
-        <div class="line"></div>
+        <div></div>
         <a href='http://stars.chromeexperiments.com/' >четвёртая ссылка</a>
-        <div class="line"></div>
+        <div></div>
         <a href='http://stars.chromeexperiments.com/' >пятая ссылка</a> 
     </div>
-    <div>
-        <a href='http://stars.chromeexperiments.com/' class="menu-link">первая ссылка</a>
-        <a href='http://stars.chromeexperiments.com/' class="menu-link">вторая ссылка</a>
-        <a href='http://stars.chromeexperiments.com/' class="menu-link">третья ссылка</a>
-        <a href='http://stars.chromeexperiments.com/' class="menu-link">четвёртая ссылка</a>
-        <a href='http://stars.chromeexperiments.com/' class="menu-link">пятая ссылка</a>
+    <br>
+    <div id="second">
+       <div>
+            <a href='http://stars.chromeexperiments.com/'>первая ссылка</a>
+       </div> 
+       <div>
+            <a href='http://stars.chromeexperiments.com/'>вторая ссылка</a>
+        </div> 
+        <div>
+            <a href='http://stars.chromeexperiments.com/'>третья ссылка</a>
+        </div> 
+        <div>
+            <a href='http://stars.chromeexperiments.com/'>четвертая ссылка</a>
+        </div> 
+        <div>
+            <a href='http://stars.chromeexperiments.com/'>пятая ссылка</a>
+        </div> 
     </div>
+    <br>
+    <div id="third">
+             <a href='http://stars.chromeexperiments.com/'>первая ссылка</a>
+             <a href='http://stars.chromeexperiments.com/'>вторая ссылка</a>
+             <a href='http://stars.chromeexperiments.com/'>третья ссылка</a>
+             <a href='http://stars.chromeexperiments.com/'>четвертая ссылка</a>
+             <a href='http://stars.chromeexperiments.com/'>пятая ссылка</a>
+     </div>
+     <br>
+     <div id="fourth">
+        <table>
+            <tr>
+                <td><a href='http://stars.chromeexperiments.com/' class="cl">первая ссылка</a></td>
+                <td><a href='http://stars.chromeexperiments.com/'>вторая ссылка</a></td>
+                <td><a href='http://stars.chromeexperiments.com/'>третья ссылка</a></td>
+                <td><a href='http://stars.chromeexperiments.com/'>четвертая ссылка</a></td>
+                <td><a href='http://stars.chromeexperiments.com/'>пятая ссылка</a></td>
+            </tr>
+        </table>
+</div>
 </body>
 </html>
