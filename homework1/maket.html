@@ -33,7 +33,7 @@
             top: 21px;
             background: #FFFFFF;
             border-radius: 31px;}
-        input{position: absolute;
+        header input{position: absolute;
             width: 240px;
             height: 22px;
             left: 16.67%;
@@ -222,7 +222,14 @@
             line-height: 22px; display: flex; align-items: center; letter-spacing: 0.03em; color: white;}
         div#footter li:nth-child(7){color: white;}
         #allcontent{position: absolute;left: 77px; right: 80.03px; top: 724px; width: 1136px; margin: auto; max-width: 100%;}
-
+        div#aleft form:first-of-type {position: absolute; top: 228px;}
+        div#aleft form:nth-of-type(2) {position: absolute; top: 405px;}
+        div#aleft form:nth-of-type(3) {position: absolute; top: 581px;}
+        div#aleft form:nth-of-type(4) {position: absolute; top: 757px;}
+        div#aleft form:nth-of-type(5) {position: absolute; top: 933px;}
+        div#aleft form:nth-of-type(6) {position: absolute; top: 1109px;}
+        
+        
         @media all and (max-widht:1296px) {
             header, header>div, div.baner, div#allcontent,div#flexone,div#sallers, div#footter{width: 100%;}
             body{margin:0px} 
@@ -292,42 +299,56 @@
                 <div></div>
                 <a class="gender" style="top: 198px">Gender</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 208.2px; left: 248.49px;"></div>
-                
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">Men' (6)<br>
+                    <input type="checkbox" name="answer" value="2">Women's (32)<br>
+                    <input type="checkbox" name="answer" value="3">Unisex (52)<br>
+                </form>
                 <a class="vm" style="top: 326px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 374px;">Brans</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 382.02px; left: 248.49px;"></div>
-                <button style="position: absolute; top:407.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 439.5px;"></button>
-                <button style="position: absolute; top: 471.5px;"></button>
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">Arbor (19)<br>
+                    <input type="checkbox" name="answer" value="2">Baaleon (6)<br>
+                    <input type="checkbox" name="answer" value="3">Capita (14)<br>
+                </form>
                 <a class="vm" style="top: 502px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 550px;">Snowboards Lenght (cm)</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 559.02px; left: 248.49px;"></div>
-                <button style="position: absolute; top:583.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 615.5px;"></button>
-                <button style="position: absolute; top: 647.5px;"></button>
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">80 to 149 (39)<br>
+                    <input type="checkbox" name="answer" value="2">150 to 159 (79))<br>
+                    <input type="checkbox" name="answer" value="3">160 to 169 (36)<br>
+                </form>
                 <a class="vm" style="top: 678px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 726px;">Snowboards Shape</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 735.02px; left: 248.49px;"></div>
-                <button style="position: absolute; top:759.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 791.5px;"></button>
-                <button style="position: absolute; top: 823.5px;"></button>
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">Directional (39)<br>
+                    <input type="checkbox" name="answer" value="2">Directional Twin (36)<br>
+                    <input type="checkbox" name="answer" value="3">True Twin (26)<br>
+                </form>
                 <a class="vm" style="top: 678px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 902px;">Snowboards Style</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 909.02px; left: 248.49px;"></div>
-                <button style="position: absolute; top:935.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 967.5px;"></button>
-                <button style="position: absolute; top: 999.5px;"></button>
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">All-Mountain (64)<br>
+                    <input type="checkbox" name="answer" value="2">Freeride (22)<br>
+                    <input type="checkbox" name="answer" value="3">Freestyle (22)<br>
+                </form>
                 <a class="vm" style="top: 1030px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 1078px;">Price</a>
                 <div><img src="img/Vector.png" style="transform: rotate(-180deg); float: right; position: absolute; top: 1087.02px; left: 248.49px;"></div>
-                <button style="position: absolute; top:1111.5px;"><div style="left: 28px;" class="men">men</div></button>
-                <button style="position: absolute; top: 1143.5px;"></button>
-                <button style="position: absolute; top: 1175.5px;"></button>
+                <form method="post" action="ddd.jsp">
+                    <input type="checkbox" name="answer" value="1">$50.00 to $99.99 (1)<br>
+                    <input type="checkbox" name="answer" value="2">$100.00 to $199.99 (1)<br>
+                    <input type="checkbox" name="answer" value="3">$200.00 to $499.99 (52)<br>
+                </form>
                 <a class="vm" style="top: 1206px;">View more...</a>
                 <div></div>
                 <a class="gender" style="top: 1255px;">Snowbord Profile</a>
