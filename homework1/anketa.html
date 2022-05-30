@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sirname=prompt('Введите вашу фамилию')
+        var name=prompt('Введите ваше имя')
+        var batyaname=prompt('Введите ваше отчество')
+        var age=prompt('Введите ваш возраст в годах')
+        var men=confirm('Ваш пол мужской?')
+                ? age>63 + alert ('Ваш пол: мужской')
+                    ? alert('Вы на пенсии: да')
+                    :alert('Вы на пенсии: нет')
+                : age>58 + alert ('Ваш пол: женский') 
+                    ?alert('Вы на пенсии: да')
+                    :alert('Вы на пенсии: нет')
+        var days= age*365
+        var five= +age+5
+        alert ('Ваше ФИО: ' + sirname +' ' + name +' ' + batyaname)
+        alert('Ваш возраст в годах: ' +age)
+        alert('Ваш возраст в днях: ' +days)
+        alert('Через 5 лет вам будет: ' +five)
+
+    </script>
+</body>
+</html>
