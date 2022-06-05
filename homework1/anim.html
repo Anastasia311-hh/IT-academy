@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.area {
+    width: 150px;
+    height: 150px;
+    background: #111;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(241, 122, 122);
+    letter-spacing: -7px;
+    font-weight: 200;
+    text-transform: uppercase;
+    animation: blur 2.75s ease-out infinite;
+    text-shadow: 0px 0px 5px rgb(179, 124, 124), 0px 0px 7px rgb(179, 124, 124) ;
+}
+@keyframes blur {
+    from {text-shadow:0px 0px 10px rgb(179, 124, 124),
+            0px 0px 5px rgb(179, 124, 124), 
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 17px rgb(179, 124, 124),
+            0px 0px 25px rgb(179, 124, 124),
+            0px 0px 25px rgb(179, 124, 124),
+            0px 0px 25px #7B96B8,
+            0px 0px 75.5px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px -10px 50px #7B96B8,
+            0px -10px 50px #7B96B8;}
+    }
+.anim:hover .anim1{
+    animation: anim1 2s infinite;
+}
+.anim:hover .anim2{
+    animation: anim2 2s infinite;
+}
+.anim:hover .anim3{
+    animation: anim3 2s infinite;
+}
+.anim:hover .anim4{
+    animation: anim4 2s infinite;
+}
+.anim:hover .anim5{
+    animation: anim5 2s infinite;
+}
+@keyframes anim1{
+    from{fill:rgb(69, 63, 220); cx: 150px; cy: 80px; r:50}
+    to{fill:rgb(58, 255, 163); cx: 30px; cy: 100px; r:10}
+}
+@keyframes anim2{
+    from{fill:rgb(255, 230, 0); stroke:rgb(28, 239, 39); stroke-width:0.1cm}
+    to{fill:rgb(255, 0, 55); stroke:rgb(0, 0, 0); stroke-width:0.5cm}
+}
+@keyframes anim3 {
+    from{cx: 200px; cy: 80px; r:20}
+    to{cx: 100px; cy: 100px; r:50}
+}
+@keyframes anim4{
+    from{fill:red; stroke:rgb(239, 165, 28); stroke-width:0.1cm;cx: 200px; cy: 80px; r:20}
+    to{fill:rgb(0, 255, 4); stroke:rgb(255, 114, 248); stroke-width:0.3cm;cx: 10px; cy: 10px; r:50}
+}
+@keyframes anim5{
+    from{r:40}
+    to{r:0}
+}
+    </style>
+</head>
+<body>
+    <div class="anim">
+        <div class="area"><br>B  M  W</div>
+        <svg wedht="150px" hieght="150px">
+            <circle class="anim1" cx="150" cy="80" r="50" style="fill:rgb(69, 63, 220); stroke:rgb(151, 64, 223); stroke-width:0.1cm"/>
+            <circle class="anim2" cx="100" cy="50" r="30" style="fill:rgb(255, 230, 0); stroke:rgb(28, 239, 39); stroke-width:0.1cm"/>
+        </svg>
+        <svg wedht="350px" hieght="350px">
+            <circle class="anim3" cx="200" cy="80" r="20" style="fill:red; stroke:rgb(239, 165, 28); stroke-width:0.1cm"/>
+            <circle class="anim4" cx="150" cy="50" r="20" style="fill:rgb(255, 0, 179); stroke:rgb(28, 53, 239); stroke-width:0.1cm"/>
+            <circle class="anim5" cx="100" cy="50" r="40" style="fill:rgb(0, 255, 251); stroke:rgb(208, 0, 255); stroke-width:0.1cm"/>
+        </svg>
+    </div>
+</body>
+</html>
