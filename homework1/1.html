@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #block{
+            width: 300px;
+            height: 300px;
+            background: red;
+            transform: translate(-305px, 0);
+            transition: 0.5s;
+        }
+        #rightside-menu{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="block"></div>
+    <button id="header__btn">Open</button>
+    <button id="rightside-menu">Close</button>
+
+    <script>
+        var open = document.getElementById('header__btn');
+        var close = document.getElementById('rightside-menu');
+        
+        var block = document.getElementById('block');
+        open.addEventListener('click', function(){
+            block.style.transform = 'translate(0,0)';
+            this.style.display = 'none';
+            close.style.display = 'block';
+        });
+
+        close.addEventListener('click', function(){
+            block.style.transform = 'translate(-305px,0)';
+            this.style.display = 'none';
+            open.style.display = 'block';
+        });
+
+
+    </script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
