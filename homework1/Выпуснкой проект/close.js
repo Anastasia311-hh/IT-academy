@@ -5,5 +5,5 @@ function openNav(){
 
   function closeNav(){
     document.getElementById("mySidebar").style.transform = 'translate(694px)';
-    document.getElementById("main").style.marginRight= "0";
+    document.getElementById("main").style.margin.Right= "0";
   }

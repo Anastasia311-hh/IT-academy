@@ -2,7 +2,7 @@
 @import 'vars';
 html, body{height: 100%;}
 body{font-size: 16px; line-height: 27px; font-weight: 400; font-family: 'Open Sans', sans-serif; color: $default;
-    overflow-x: hidden; min-width: 320px;}
+    overflow-x: hidden; min-width: 300px;}
 
 .wrapper{display: flex; flex-direction: column; }
 li{list-style: none;}
@@ -42,6 +42,9 @@ li{list-style: none;}
     }
     &__btn{background-color: transparent;
     border: none; cursor: pointer;}
+    &__btn-menu{
+        display: none;
+    }
 }
 .logo{ margin: 0 auto;}
 .menu{
@@ -237,11 +240,15 @@ li{list-style: none;}
     z-index: 4;
     &__list{
         display: flex;
+        overflow-x: auto;
+    }
+    &__item{
+        position: relative;
+        padding-right: 8px;
     }
     &__item::after{
         content: '/';
-        margin-left: -4px;
-        margin-right: 4px;
+        position: absolute;
     }
     &__item:last-child::after{
         display: none;
@@ -425,7 +432,7 @@ li{list-style: none;}
         }
     }
     &__text{
-        min-width: 540px;
+        min-width: 320px;
     }
 }
 .works-path{
@@ -1189,3 +1196,6 @@ margin-bottom: 55px;}
         cursor: pointer;
     }
 }
+
+
+@import 'media';

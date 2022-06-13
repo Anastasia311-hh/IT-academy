@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css.css.map">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="reset.css.map">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="vars.css">
     <link rel="stylesheet" href="vars.css.map">
     <link rel="stylesheet" href="libs.css">
@@ -28,7 +29,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner" id="main">
-                    <nav class="menu">
+                    <nav class="menu" id="mav">
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a href="about.html" class="menu__list-link">About</a>
@@ -41,7 +42,7 @@
                     <a class="logo" href="1done.html">
                         <img src="img/logo.png" alt="">
                     </a>
-                    <nav class="menu">
+                    <nav class="menu" id="mava">
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a href="blog1.html" class="menu__list-link">Blog</a>
@@ -51,6 +52,11 @@
                             </li>
                         </ul>
                     </nav>
+                    <button class="header__btn-menu" onclick="myFunction()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </button>
                     <button class="header__btn" onclick="openNav()">
                         <img src="img/icon_menu.svg" alt="icon menu">
                     </button>
@@ -462,6 +468,7 @@
 <script src="dist/mixitup.min.js"></script>
 <script src="dist/mixitup.js"></script>
 <script src="close.js"></script>
+<script src="open.js"> </script>
 <script src="main.js" type="text/javascript"></script>
 </body>
 
